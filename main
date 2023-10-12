@@ -1,0 +1,16 @@
+from pid import PIDController
+
+
+# Example usage:
+desired_setpoint = 50
+current_measurement = 30
+kp = 0.6
+ki = 0.005
+kd = 0.1
+
+pid = PIDController(desired_setpoint, kp, ki, kd)
+
+for _ in range(100):
+    control_output = pid.update(current_measurement)
+    current_measurement += control_output  # Simulate a change in the system state
+    print(f"Control Output: {control_output}")
