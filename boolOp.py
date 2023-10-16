@@ -11,7 +11,7 @@ class boolOperators(): # Lets have different boolean operators listed here.
     
     def bOr(in1, in2): # Basic OR operation with 2 inputs and 1 output.
 
-        if in1 == True and in2 == True:
+        if in1 == True or in2 == True:
             out = True
         else:
             out = False
