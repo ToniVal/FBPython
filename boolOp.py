@@ -1,5 +1,11 @@
 class boolOperators(): # Lets have different boolean operators listed here.
+   
+    def bInOut(in1): # Basic INPUT/OUTPUT operator, this if for making the I/O defination easier.
 
+        out = in1
+
+        return out
+   
     def bAnd(in1, in2): # Basic AND operation with 2 inputs and 1 output. 
 
         if in1 == True and in2 == True:
