@@ -20,9 +20,15 @@ for _ in range(100):
 
 print(BOR) """
 
+arithmetic_instance = arithmeticOperators()
+
 varOutT = "none"
-nInp = arithmeticOperators.numInOut("input",6, varOutT)
-print(nInp)
-value1, value2 = nInp()
-nOutp = arithmeticOperators.numInOut("output",value1, value2) #how do I reference to variable that's returned when executing a function?
+nInp = arithmetic_instance.numInOut("input", 6, varOutT)
+
+valu1 = nInp[0]
+valu2 = nInp[1]
+print(valu1)
+print(valu2)
+
+nOutp = arithmetic_instance.numInOut("output", valu1, valu2) #VITTU TÄÄ PASKA TOIMI SAATANA
 print(nOutp)
