@@ -2,7 +2,7 @@ from pid import PIDController
 from boolOp import boolOperators
 from arithmeticOp import arithmeticOperators
 
-""" # Example usage:
+""" # Example usage: # PID tester
 desired_setpoint = 50
 current_measurement = 30
 kp = 0.6
@@ -16,11 +16,12 @@ for _ in range(100):
     current_measurement += control_output  # Simulate a change in the system state
     print(f"Control Output: {control_output}")
  """
-""" BOR = boolOperators.bNot(False)
+
+""" BOR = boolOperators.bNot(False) # Boolean operators
 
 print(BOR) """
 
-arithmetic_instance = arithmeticOperators()
+""" arithmetic_instance = arithmeticOperators() # Arithmetic operators
 
 varOutT = "none"
 nInp = arithmetic_instance.numInOut("input", 6, varOutT)
@@ -31,4 +32,4 @@ print(valu1)
 print(valu2)
 
 nOutp = arithmetic_instance.numInOut("output", valu1, valu2) #VITTU TÄÄ PASKA TOIMI SAATANA
-print(nOutp)
+print(nOutp) """
