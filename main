@@ -33,3 +33,6 @@ print(valu2)
 
 nOutp = arithmetic_instance.numInOut("output", valu1, valu2) #VITTU TÄÄ PASKA TOIMI SAATANA
 print(nOutp) """
+
+rooting = arithmeticOperators.numRoot(27,3)
+print(rooting)

@@ -1,0 +1,25 @@
+""" import time
+
+class ElectromechanicalRelay:
+    def __init__(self, initial_state=False):
+        self.state = initial_state
+
+    def set_state(self, new_state):
+        if new_state not in (True, False):
+            raise ValueError("State must be a boolean value.")
+        self.state = new_state
+        print(f"Relay state set to: {self.state}")
+
+    def toggle(self):
+        self.state = not self.state
+        print(f"Relay state toggled. New state: {self.state}")
+
+# Example usage:
+relay = ElectromechanicalRelay()
+print("Initial state:", relay.state)
+
+relay.set_state(True)
+time.sleep(1)  # Simulating some delay
+relay.toggle()
+time.sleep(1)  # Simulating some delay
+relay.set_state(False) """

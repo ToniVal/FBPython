@@ -41,3 +41,14 @@ class arithmeticOperators(): # Basic arithmetic functions, probably the best way
 
         return out
     
+    def numRoot(in1, in2): # Square root
+
+        out = pow(in1, (1/in2))
+
+        return out
+    
+    def numPowr(in1, in2): # X to the Power of Y
+
+        out = pow(in1, in2)
+
+        return out
