@@ -32,3 +32,15 @@ class boolOperators(): # Lets have different boolean operators listed here.
             out = True
         
         return out
+    
+    def bSR(b_set, b_reset): # Set Reset latch
+
+        if b_set == True and b_reset == False and prevState == False:
+            nextState = True
+        elif b_set == False and b_reset == True and prevState == True:
+            nextState = False
+        else:
+            nextState = prevState
+
+        prevState = nextState
+        return nextState
